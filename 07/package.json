@@ -1,8 +1,8 @@
 {
-  "name": "sap.m.tutorial.walkthrough.05",
+  "name": "sap.m.tutorial.walkthrough.07",
   "version": "1.0.0",
   "author": "Love2ming",
-  "description": "SAP UI5 初学者教程之五：视图控制器初探",
+  "description": "SAP UI5 初学者教程之7：JSON 模型初探",
   "scripts": {
     "start": "ui5 serve"
   },

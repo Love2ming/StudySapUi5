@@ -2,7 +2,7 @@
   "name": "sap.m.tutorial.walkthrough.05",
   "version": "1.0.0",
   "author": "Love2ming",
-  "description": "SAP UI5 初学者教程之五：视图控制器初探",
+  "description": "SAP UI5 初学者教程之six：了解 SAP UI5 的模块(Module)概念",
   "scripts": {
     "start": "ui5 serve"
   },
