@@ -30,3 +30,9 @@ sap.ui.define([
        }
     });
  });
+// 以前是在index.js里初始化view，现在由Component.js初始化view。
+// 用metadata知道view的代码文件，view的类型，view的加载是同步还异步
+// 以前是在App.controller.js里初始化model，现在由Component.js初始化Model。
+// 在UIComponent的构造方法里，使用metadata实例化view，
+// 实例化JSONModel，ResourceModel，以前要把Model放到view里，
+// 现在不用了，放到自己的里面就可以了。虽然没有放到view里，但也能从view里取得出来。

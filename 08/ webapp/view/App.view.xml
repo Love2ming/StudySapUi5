@@ -2,6 +2,7 @@
 	controllerName="sap.ui5.walkthrough.controller.App"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
+<!--	从名字为i18n的model里取得字符串-->
 	<Button
 		text="{mingi18n>showHelloButtonText}"
 		press=".onShowHello"/>

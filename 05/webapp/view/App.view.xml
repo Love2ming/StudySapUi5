@@ -6,3 +6,12 @@
             text="Say Hello"
             press=".onShowHello"/>
 </mvc:View>
+
+<!-- 1、controllerName：指明这个view要使用的controller。
+view并不是一定要使用Controller，如果使用了，就要先在这里定义，
+当此view被加载完后，此view的Controller紧接着被加载。
+2、.onShowHello：点的意思是press事件的代码的所在文件是，
+在绑定到此view的controller里，
+也就是在webapp/controller/App.controller.js文件里。
+3、sap.ui.demo.walkthrough.controller.App：
+指明的具体文件是webapp/controller/App.controller.js-->

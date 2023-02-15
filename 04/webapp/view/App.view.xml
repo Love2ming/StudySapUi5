@@ -3,3 +3,7 @@
         xmlns:mvc="sap.ui.core.mvc">
     <Text text="Hello World"/>
 </mvc:View>
+<!-- xmlns：引入sap.m库
+xmlns:mvc="sap.ui.core.mvc"：引入sap.ui.core.mvc库，
+并给个别名叫mvc，把名字缩短了，方便后续使用。
+Text：定义一个Text控件。，Text的内容是Hello World-->

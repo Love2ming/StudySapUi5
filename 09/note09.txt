@@ -1,0 +1,7 @@
+总结：当在浏览器里访问index.html后，程序执行的顺序
+1， index.html里使用index.js，所以执行index.js
+2， index.js里调用了ComponentContainer，所以就执行了Component.js，
+    Component.js里初始化了rootview，就是App.view.xml，
+    然后替换掉index.html里的id为Content的DOM节点，所以画面就显示了，
+    显示了model的值和i18n里的值。
+3， 当点击按钮后，执行App.view.xml里关联的App.controller.js的onShowHello方法。
