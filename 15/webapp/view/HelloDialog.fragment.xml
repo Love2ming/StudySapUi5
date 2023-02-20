@@ -1,0 +1,11 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="helloDialog"
+      title="Hello {/recipient/name}">
+   </Dialog>
+</core:FragmentDefinition>
+<!-- 创建一个fragment，里面只有一个对话框控件。-->
+<!-- fragment的语法和view类似，只是少了controller，并且没有footprint。footprint类似一个控件的容器。-->
+<!-- 这里Dialog也定义了id=helloDialog，方便HelloPanel的controller访问它。-->
