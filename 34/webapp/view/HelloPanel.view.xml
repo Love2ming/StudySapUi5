@@ -1,0 +1,40 @@
+<mvc:View
+   controllerName="sap.ui5.walkthrough.controller.HelloPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+<!--   如果device模型的/system/phone字段的值为true
+说明当前UI5应用运行在phone设备上，因此expandable也为true，标志着Panel可以折叠-->
+<!--   如果device模型的/system/phone的字段值为false，使用！取反后为true，expanded为true；
+意味着在除了phone设备上，Panel自动处于展开状态，默认显示Panel中所有控件-->
+   <Panel
+      headerText="{i18n>helloPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      expandable="{device>/system/phone}"
+		expanded="{= !${device>/system/phone} }"
+      >
+      <content>
+<!--         给Button添加一个css类sapUiVisibleOnlyOnDesktop，如果HTML
+标签有该类css，则只有在Desktop这种device类型的设备上，该标签才可视-->
+<!--         该css类在library.css文件里-->
+      <Button
+         id="helloDialogButton"
+         icon="sap-icon://world"
+         text="{i18n>openDialogButtonText}"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+
+      <Button
+         text="{i18n>showHelloButtonText}"
+         press=".onShowHello"
+         class="myCustomButton"/>
+      <Input
+         value="{/recipient/name}"
+         valueLiveUpdate="true"
+         width="60%"/>
+      <FormattedText
+         htmlText="Hello {/recipient/name}"
+         class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+      </content>
+   </Panel>
+</mvc:View>
