@@ -1,0 +1,20 @@
+<mvc:View
+        controllerName="sap.ui5.walkthrough.controller.BarcodeScannerButton"
+        xmlns:ndc="sap.ndc"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m">
+<!--	linn3 定义来自命名空间sap.ndc的SAP UI5标准barcode扫描控件》line8-->
+	<VBox class="sapUiSmallMargin">
+		<ndc:BarcodeScannerButton
+			id="button"
+			scanSuccess="onScanSuccess"
+			scanFail="onScanError"
+			dialogTitle="Barcode Scanner Button Sample"
+		/>
+<!--		line10&line11分别定义了调用摄像头扫描成功和失败后分别执行的逻辑-->
+		<HBox class="sapUiTinyMarginTop">
+			<Label text="Scan Result:"/>
+			<Text id="result" text="" class="sapUiTinyMarginBegin"/>
+		</HBox>
+	</VBox>
+</mvc:View>
